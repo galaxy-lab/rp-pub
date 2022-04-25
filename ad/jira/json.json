@@ -1,0 +1,350 @@
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10041.properties,customfield_10010.requestTypePractice",
+    "id": "10088",
+    "self": "https://teamuniti.atlassian.net/rest/api/2/issue/10088",
+    "key": "DESK-101",
+    "fields": {
+        "statuscategorychangedate": "2022-04-12T12:59:54.116-0300",
+        "fixVersions": [],
+        "resolution": null,
+        "lastViewed": "2022-04-12T13:00:01.681-0300",
+        "customfield_10060": null,
+        "customfield_10061": null,
+        "customfield_10062": null,
+        "customfield_10063": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/customFieldOption/10035",
+            "value": "Super Admin",
+            "id": "10035"
+        },
+        "customfield_10064": "asdas2",
+        "customfield_10065": null,
+        "priority": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/priority/3",
+            "iconUrl": "https://teamuniti.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+        },
+        "labels": [],
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "versions": [],
+        "issuelinks": [],
+        "assignee": null,
+        "status": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/status/1",
+            "description": "The issue is open and ready for the assignee to start work on it.",
+            "iconUrl": "https://teamuniti.atlassian.net/images/icons/statuses/open.png",
+            "name": "Open",
+            "id": "1",
+            "statusCategory": {
+                "self": "https://teamuniti.atlassian.net/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "To Do"
+            }
+        },
+        "components": [],
+        "customfield_10050": null,
+        "customfield_10051": [],
+        "customfield_10052": null,
+        "customfield_10053": null,
+        "customfield_10054": null,
+        "customfield_10055": null,
+        "customfield_10056": null,
+        "customfield_10057": null,
+        "customfield_10058": null,
+        "customfield_10059": [
+            {
+                "self": "https://teamuniti.atlassian.net/rest/api/2/user?accountId=6023d9eae7deee00692df07a",
+                "accountId": "6023d9eae7deee00692df07a",
+                "emailAddress": "netcpalves@gmail.com",
+                "avatarUrls": {
+                    "48x48": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                    "24x24": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                    "16x16": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                    "32x32": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png"
+                },
+                "displayName": "Paulo César Alves PC",
+                "active": true,
+                "timeZone": "America/Sao_Paulo",
+                "accountType": "atlassian"
+            }
+        ],
+        "customfield_10049": null,
+        "aggregatetimeestimate": null,
+        "creator": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/user?accountId=6023d9eae7deee00692df07a",
+            "accountId": "6023d9eae7deee00692df07a",
+            "emailAddress": "netcpalves@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                "24x24": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                "16x16": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                "32x32": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png"
+            },
+            "displayName": "Paulo César Alves PC",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "customfield_10040": 0.0,
+        "customfield_10041": null,
+        "customfield_10042": null,
+        "reporter": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/user?accountId=6023d9eae7deee00692df07a",
+            "accountId": "6023d9eae7deee00692df07a",
+            "emailAddress": "netcpalves@gmail.com",
+            "avatarUrls": {
+                "48x48": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                "24x24": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                "16x16": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png",
+                "32x32": "https://secure.gravatar.com/avatar/84ab4ab0864f3c29cf9b145c646057f0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FPP-1.png"
+            },
+            "displayName": "Paulo César Alves PC",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+        },
+        "customfield_10043": null,
+        "customfield_10044": null,
+        "aggregateprogress": {
+            "progress": 0,
+            "total": 0
+        },
+        "customfield_10046": null,
+        "customfield_10047": null,
+        "customfield_10048": null,
+        "customfield_10038": null,
+        "customfield_10039": "Checklist: 0/3",
+        "progress": {
+            "progress": 0,
+            "total": 0
+        },
+        "votes": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/issue/DESK-101/votes",
+            "votes": 0,
+            "hasVoted": false
+        },
+        "worklog": {
+            "startAt": 0,
+            "maxResults": 20,
+            "total": 0,
+            "worklogs": []
+        },
+        "issuetype": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/issuetype/10004",
+            "id": "10004",
+            "description": "An IT problem or question.",
+            "iconUrl": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10551?size=medium",
+            "name": "IT Help",
+            "subtask": false,
+            "avatarId": 10551,
+            "hierarchyLevel": 0
+        },
+        "timespent": null,
+        "project": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/project/10001",
+            "id": "10001",
+            "key": "DESK",
+            "name": "Demo service project",
+            "projectTypeKey": "service_desk",
+            "simplified": false,
+            "avatarUrls": {
+                "48x48": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10420",
+                "24x24": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10420?size=small",
+                "16x16": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10420?size=xsmall",
+                "32x32": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10420?size=medium"
+            }
+        },
+        "customfield_10032": null,
+        "customfield_10033": {
+            "id": "1",
+            "name": "Time to resolution",
+            "_links": {
+                "self": "https://teamuniti.atlassian.net/rest/servicedeskapi/request/10088/sla/1"
+            },
+            "completedCycles": [],
+            "ongoingCycle": {
+                "startTime": {
+                    "iso8601": "2022-04-12T12:59:53-0300",
+                    "jira": "2022-04-12T12:59:53.543-0300",
+                    "friendly": "Today 12:59:53",
+                    "epochMillis": 1649779193543
+                },
+                "breachTime": {
+                    "iso8601": "2022-04-14T12:59:53-0300",
+                    "jira": "2022-04-14T12:59:53.543-0300",
+                    "friendly": "14/Apr/22 12:59",
+                    "epochMillis": 1649951993543
+                },
+                "breached": false,
+                "paused": false,
+                "withinCalendarHours": true,
+                "goalDuration": {
+                    "millis": 57600000,
+                    "friendly": "16h"
+                },
+                "elapsedTime": {
+                    "millis": 240692,
+                    "friendly": "4m"
+                },
+                "remainingTime": {
+                    "millis": 57359308,
+                    "friendly": "15h 55m"
+                }
+            }
+        },
+        "customfield_10034": {
+            "id": "2",
+            "name": "Time to first response",
+            "_links": {
+                "self": "https://teamuniti.atlassian.net/rest/servicedeskapi/request/10088/sla/2"
+            },
+            "completedCycles": [],
+            "ongoingCycle": {
+                "startTime": {
+                    "iso8601": "2022-04-12T12:59:53-0300",
+                    "jira": "2022-04-12T12:59:53.543-0300",
+                    "friendly": "Today 12:59:53",
+                    "epochMillis": 1649779193543
+                },
+                "breachTime": {
+                    "iso8601": "2022-04-13T12:59:53-0300",
+                    "jira": "2022-04-13T12:59:53.543-0300",
+                    "friendly": "13/Apr/22 12:59",
+                    "epochMillis": 1649865593543
+                },
+                "breached": false,
+                "paused": false,
+                "withinCalendarHours": true,
+                "goalDuration": {
+                    "millis": 28800000,
+                    "friendly": "8h"
+                },
+                "elapsedTime": {
+                    "millis": 240627,
+                    "friendly": "4m"
+                },
+                "remainingTime": {
+                    "millis": 28559373,
+                    "friendly": "7h 55m"
+                }
+            }
+        },
+        "aggregatetimespent": null,
+        "customfield_10035": {
+            "languageCode": "en",
+            "displayName": "English"
+        },
+        "customfield_10037": null,
+        "customfield_10027": [],
+        "customfield_10028": null,
+        "customfield_10029": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "watches": {
+            "self": "https://teamuniti.atlassian.net/rest/api/2/issue/DESK-101/watchers",
+            "watchCount": 0,
+            "isWatching": false
+        },
+        "issuerestriction": {
+            "issuerestrictions": {},
+            "shouldDisplay": false
+        },
+        "created": "2022-04-12T12:59:53.543-0300",
+        "customfield_10020": null,
+        "customfield_10021": null,
+        "customfield_10022": null,
+        "customfield_10023": null,
+        "customfield_10024": null,
+        "customfield_10025": null,
+        "customfield_10026": null,
+        "customfield_10016": null,
+        "customfield_10017": null,
+        "customfield_10018": {
+            "hasEpicLinkFieldDependency": false,
+            "showField": false,
+            "nonEditableReason": {
+                "reason": "PLUGIN_LICENSE_ERROR",
+                "message": "The Parent Link is only available to Jira Premium users."
+            }
+        },
+        "customfield_10019": "0|i000hj:",
+        "updated": "2022-04-12T12:59:54.533-0300",
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_10010": {
+            "_links": {
+                "jiraRest": "https://teamuniti.atlassian.net/rest/api/2/issue/10088",
+                "web": "https://teamuniti.atlassian.net/servicedesk/customer/portal/1/DESK-101",
+                "self": "https://teamuniti.atlassian.net/rest/servicedeskapi/request/10088",
+                "agent": "https://teamuniti.atlassian.net/browse/DESK-101"
+            },
+            "requestType": {
+                "_expands": [
+                    "field"
+                ],
+                "id": "1",
+                "_links": {
+                    "self": "https://teamuniti.atlassian.net/rest/servicedeskapi/servicedesk/1/requesttype/1"
+                },
+                "name": "IT help",
+                "description": "Get general tech support, like help with the Wi-Fi or printing.",
+                "helpText": "",
+                "issueTypeId": "10004",
+                "serviceDeskId": "1",
+                "groupIds": [
+                    "1"
+                ],
+                "icon": {
+                    "id": "10541",
+                    "_links": {
+                        "iconUrls": {
+                            "48x48": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/SD_REQTYPE/avatar/10541?size=large",
+                            "24x24": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/SD_REQTYPE/avatar/10541?size=small",
+                            "16x16": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/SD_REQTYPE/avatar/10541?size=xsmall",
+                            "32x32": "https://teamuniti.atlassian.net/rest/api/2/universal_avatar/view/type/SD_REQTYPE/avatar/10541?size=medium"
+                        }
+                    }
+                }
+            },
+            "currentStatus": {
+                "status": "Open",
+                "statusCategory": "NEW",
+                "statusDate": {
+                    "iso8601": "2022-04-12T12:59:53-0300",
+                    "jira": "2022-04-12T12:59:53.543-0300",
+                    "friendly": "Today 12:59:53",
+                    "epochMillis": 1649779193543
+                }
+            }
+        },
+        "customfield_10014": null,
+        "timetracking": {},
+        "customfield_10015": null,
+        "customfield_10005": null,
+        "customfield_10006": null,
+        "customfield_10007": null,
+        "security": null,
+        "customfield_10008": null,
+        "attachment": [],
+        "customfield_10009": null,
+        "summary": "tony.stark@paulocalveslive.onmicrosoft.com",
+        "customfield_10000": "{}",
+        "customfield_10001": null,
+        "customfield_10002": [],
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "environment": null,
+        "duedate": null,
+        "comment": {
+            "comments": [],
+            "self": "https://teamuniti.atlassian.net/rest/api/2/issue/10088/comment",
+            "maxResults": 0,
+            "total": 0,
+            "startAt": 0
+        }
+    }
+}
