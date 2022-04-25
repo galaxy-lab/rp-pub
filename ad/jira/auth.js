@@ -16,6 +16,8 @@ var jira = new JiraApi({
     apiVersion: '2',
     strictSSL: true
 });
+
+
 const usernameJ = 'netcpalves@gmail.com'
 const pass = 'RQFOi2und5z3uOlOsyuD4404'
 
