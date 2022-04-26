@@ -25,7 +25,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Syncing azure devops projects on jira field 
       run: |
-        npm run build
+        npm build
         npm start
 
     # Steps represent a sequence of tasks that will be executed as part of the job
