@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "npm i axios & node main.js"
+    "build": "npm i axios",
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "",
