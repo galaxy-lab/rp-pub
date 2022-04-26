@@ -53,4 +53,6 @@ async function addFieldOptions() {
     }
 }
 
+console.log(process.env.AZURE_DEVOPS_USERNAME, process.env.JIRA_USER, process.env.AZURE_DEVOPS_TOKEN, process.env.JIRA_TOKEN)
+
 // addFieldOptions()
