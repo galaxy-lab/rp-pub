@@ -28,6 +28,4 @@ jobs:
       # Runs a single command using the runners shell 
       - name: Syncing azure devops projects on jira field
         run: |
-          npm run install
-          npm run make
-        
+          npm run install        
