@@ -7,7 +7,7 @@ const axApi = axios.create({
     },
     auth: {
         username: process.env.JIRA_USER,
-        password: process.env.TOKEN_JIRA
+        password: process.env.JIRA_TOKEN
     }
 })
 
