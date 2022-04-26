@@ -26,13 +26,13 @@ async function getAzureDevopsProjects() {
         for (element in arrProjects) {
             allProjects.push(arrProjects[element].name)
         }
+        console.log(allProjects)
         return allProjects
     } catch (err) {
         console.error(err)
     }
 }
-console.log('SHOW ' + getAzureDevopsProjects())
-
+getAzureDevopsProjects()
 async function addFieldOptions() {
     try {
         var projects = await getAzureDevopsProjects()
