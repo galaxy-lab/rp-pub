@@ -29,5 +29,5 @@ jobs:
       - name: Syncing azure devops projects on jira field
         run: |
           npm run build
-          npm run start
+          node main
           
