@@ -31,6 +31,7 @@ async function getAzureDevopsProjects() {
         console.error(err)
     }
 }
+getAzureDevopsProjects()
 
 async function addFieldOptions() {
     try {
@@ -52,4 +53,4 @@ async function addFieldOptions() {
     }
 }
 
-addFieldOptions()
+// addFieldOptions()
