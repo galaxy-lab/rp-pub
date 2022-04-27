@@ -1,48 +1,36 @@
-const axios = require('axios')
-
-const axApi = axios.create({
-    baseURL: `https://teamuniti.atlassian.net/rest`,
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    auth: {
-        username: process.env.JIRA_USER,
-        password: process.env.JIRA_TOKEN
-    }
-})
-
-
+// const { azureDevopsApi, jiraApi } = require('./auth')
+import { azureDevopsApi, jiraApi } from './auth.js'
 
 async function getAzureDevopsProjects() {
     var allProjects = []
     try {
-        const response = await axios.get(`https://dev.azure.com/pcdemolab/_apis/projects?api-version=2.0`, {
-            auth: {
-                username: process.env.AZURE_DEVOPS_USERNAME,
-                password: process.env.AZURE_PERSONAL_ACCESS_TOKEN
-            }
-        })
+        const response = await azureDevopsApi.get(`/_apis/projects?api-version=2.0`, {})
         const arrProjects = response.data.value
-        for (element in arrProjects) {
-            allProjects.push(arrProjects[element].name)
+        for (const element of arrProjects) {
+            allProjects.push(element.name)
+            // console.log(element.name)
         }
+
         return allProjects
+        // console.log(allProjects)
     } catch (err) {
         console.error(err)
     }
 }
+
 // getAzureDevopsProjects()
+
 async function addFieldOptions() {
     try {
         var projects = await getAzureDevopsProjects()
-        for (element in projects) {
+        for (const element of projects) {
 
-            console.log(`Adicionando o projeto ${projects[element]}`)
-            const response = await axApi.post(`/api/3/customField/10066/option`, {
+            console.log(`Adicionando o projeto ${element}`)
+            const response = await jiraApi.post(`/api/3/customField/10066/option`, {
 
                 options: [{
                     cascadingOptions: [],
-                    value: projects[element]
+                    value: element
                 }]
             })
             console.log(response.data)
