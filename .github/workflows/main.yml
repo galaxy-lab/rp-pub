@@ -34,6 +34,7 @@ jobs:
         with:
           node-version: 14
       - run: node main
+      - run: ls
         env:
           AZURE_DEVOPS_USERNAME: ${{ secrets. AZURE_DEVOPS_USERNAME }}
           AZURE_PERSONAL_ACCESS_TOKEN: ${{ secrets. AZURE_PERSONAL_ACCESS_TOKEN }}
