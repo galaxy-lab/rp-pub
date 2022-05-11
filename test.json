@@ -1,0 +1,50 @@
+{
+   "maxResults": 100,
+   "startAt": 0,
+   "total": 8,
+   "isLast": true,
+   `{
+   "options": [
+      {
+         "id": "10046",
+         "value": "Dev",
+         "disabled": false
+      },
+      {
+         "id": "10048",
+         "value": "Finance",
+         "disabled": true
+      },
+      {
+         "id": "10047",
+         "value": "Frontend",
+         "disabled": false
+      },
+      {
+         "id": "10066",
+         "value": "ghapi-ci",
+         "disabled": false
+      },
+      {
+         "id": "10073",
+         "value": "demo-action",
+         "disabled": false
+      },
+      {
+         "id": "10075",
+         "value": "HR",
+         "disabled": false
+      },
+      {
+         "id": "10074",
+         "value": "demo-lab",
+         "disabled": false
+      },
+      {
+         "id": "10076",
+         "value": "teste",
+         "disabled": false
+      }
+   ]
+}`
+}
