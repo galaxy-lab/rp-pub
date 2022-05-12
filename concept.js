@@ -29,7 +29,7 @@ var devopsProjects = [
 // MAPEAR QUAL ITEM NÃO ESTÁ NO AZURE DEVOPS PARA EXCLUIR
 let fieldOptionsValues = jiraOptions.map(x => x.value.toLocaleLowerCase())
 // let fieldOptionsId = jiraOptions.map(x => x.id.toLocaleLowerCase())
-
+console.log(fieldOptionsValues.indexOf('ghapi-sadci'))
 
 
 
@@ -38,6 +38,7 @@ function mapOptions(fieldOptionsValues) {
     let count = 0
     var body = {
         options: [
+
         ]
     }
     

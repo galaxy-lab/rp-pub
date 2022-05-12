@@ -1,6 +1,6 @@
 import axios from 'axios'
-// const axios = require('axios')
-
+import dotenv from 'dotenv'
+dotenv.config()
 
 export const jiraApi = axios.create({
     baseURL: `https://teamuniti.atlassian.net/rest`,
@@ -9,8 +9,8 @@ export const jiraApi = axios.create({
         'Content-Type': 'application/json'
     },
     auth: {
-        username: process.env.JIRA_USERNAME,
-        password: process.env.JIRA_TOKENA
+        username: process.env.JIRA_USER,
+        password: process.env.JIRA_TOKEN
     }
 })
 
@@ -23,3 +23,4 @@ export const azureDevopsApi = axios.create({
     }
 })
 
+console.log(process.env.AZURE_DEVOPS_USER, process.env.AZURE_DEVOPS_PAT, process.env.JIRA_USER, process.env.JIRA_TOKEN)

@@ -14,14 +14,14 @@ async function getAzureDevopsProjects() {
         console.error(err)
     }
 }
-
+await getAzureDevopsProjects()
 
 async function addFieldOptions() {
     try {
         var projects = await getAzureDevopsProjects()
         for (const element of projects) {
 
-            console.log(`Adicionando o projeto ${element}`)
+            console.log(`Adicionando o projeto ${element} no customfield 10066`)
             const response = await jiraApi.post(`/api/3/customField/10066/option`, {
 
                 options: [{
@@ -29,8 +29,8 @@ async function addFieldOptions() {
                     value: element
                 }]
             })
-            console.log(response.data)
         }
+        console.log("-----------------------------------------------------")
     } catch (err) {
         console.error(err)
     }
@@ -49,10 +49,9 @@ async function getFieldOptions() {
     }
 
 }
-
 const fieldOptions = await getFieldOptions()
+// console.log(fieldOptions)
 const devopsProjects = await getAzureDevopsProjects()
-
 const fieldOptionsValues = await fieldOptions.map(x => x.value.toLocaleLowerCase())
 
 function mapOptions(fieldOptionsValues, devopsProjects) {
@@ -80,10 +79,16 @@ const optionsToDisable = mapOptions(fieldOptionsValues, devopsProjects)
 async function disableFieldOptions(mapOptions) {
     try {
         const response = await jiraApi.put(`/api/3/field/customfield_10066/context/10167/option`, mapOptions)
+        console.log('Field(s) disabled: ')        
         console.log(response.data)
     } catch (err) {
         console.error(err.message)
     }
 }
 
+
 disableFieldOptions(optionsToDisable)
+
+
+
+// CRIAR FUNÇÃO PARA PROJETO QUANDO DELETADO E CRIADO NOVAMENTE COM O MSM NOME DEVE SER HABILITADO
