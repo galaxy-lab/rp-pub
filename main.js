@@ -1,4 +1,3 @@
-// const { azureDevopsApi, jiraApi } = require('./auth')
 import { azureDevopsApi, jiraApi } from './auth.js'
 
 async function getAzureDevopsProjects() {
@@ -8,17 +7,14 @@ async function getAzureDevopsProjects() {
         const arrProjects = response.data.value
         for (const element of arrProjects) {
             allProjects.push(element.name)
-            // console.log(element.name)
         }
 
         return allProjects
-        // console.log(allProjects)
     } catch (err) {
         console.error(err)
     }
 }
 
-// getAzureDevopsProjects()
 
 async function addFieldOptions() {
     try {
@@ -43,20 +39,6 @@ async function addFieldOptions() {
 await addFieldOptions()
 
 
-// console.log(await jiraApi.get(`/api/3/field/customfield_10066/context`))
-
-
-
-
-
-
-
-
-
-
-
-// RETRIEVE AN ARRAY OF ALL FIELD OPTIONS SORTED ALPHABETICALLY
-// TRAZER O ID E O VALUE AQUI
 async function getFieldOptions() {
     try {
         const response = await jiraApi.get(`/api/3/field/customfield_10066/context/10167/option`)
@@ -94,26 +76,8 @@ function mapOptions(fieldOptionsValues, devopsProjects) {
 
 const optionsToDisable = mapOptions(fieldOptionsValues, devopsProjects)
 
-// // MAPEAR QUAL ITEM NÃO ESTÁ NO AZURE DEVOPS PARA EXCLUIR
-// let fieldOptionsValues = jiraOptions.map(x => x.value.toLocaleLowerCase())
-// let fieldOptionsId = jiraOptions.map(x => x.id.toLocaleLowerCase())
-// let count = 0
-
-// for (let project of fieldOptionsValues) {
-//     if (devopsProjects.indexOf(project) == -1) {
-//         console.log(jiraOptions[count].id, jiraOptions[count].value)
-//     }
-//     count ++
-// }
-
-
-
-
 
 async function disableFieldOptions(mapOptions) {
-    // const bodyData = null
-
-
     try {
         const response = await jiraApi.put(`/api/3/field/customfield_10066/context/10167/option`, mapOptions)
         console.log(response.data)
@@ -123,31 +87,3 @@ async function disableFieldOptions(mapOptions) {
 }
 
 disableFieldOptions(optionsToDisable)
-
-// const devopsProjects = await getAzureDevopsProjects()
-// const fieldOptions = await getFieldOptions()
-// fieldOptions.filter(element => {
-//     console.log(element.value.toLowerCase())
-// })
-
-
-
-
-
-
-
-
-// RETRIEVE AN ARRAY OF THE ITENS THAT DOESN'T ON AZURE DEVOPS AS PROJECTS
-// PEGAR ESSE RETORNO E EXCLUIR CADA ITEM NO JIRA FIELD OPTION
-// const output = fieldOptions.filter(function (obj) {
-//     return devopsProjects.indexOf(obj) === -1
-// })
-
-// console.log(output)
-
-
-
-
-/*
-RODAR O CODIGO PARA VER O OPTION ID MUDA
-*/
