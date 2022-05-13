@@ -22,5 +22,3 @@ export const azureDevopsApi = axios.create({
         password: process.env.AZURE_DEVOPS_PAT
     }
 })
-
-console.log(process.env.AZURE_DEVOPS_USER, process.env.AZURE_DEVOPS_PAT, process.env.JIRA_USER, process.env.JIRA_TOKEN)
