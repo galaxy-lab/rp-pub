@@ -22,14 +22,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: INSTALL DEPENDENCIES 
-        run: npm run build
-
-#       # Runs a set of commands using the runners shell
-      - name: SYNC PROJETOS
-        run: |
-          npm run start
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - run: node main
+        env:
+          AZURE_DEVOPS_USERNAME: ${{ secrets. AZURE_DEVOPS_USERNAME }}
+          AZURE_PERSONAL_ACCESS_TOKEN: ${{ secrets. AZURE_PERSONAL_ACCESS_TOKEN }}
+          JIRA_TOKEN: ${{ secrets. JIRA_TOKEN }}
+          JIRA_USER: ${{ secrets. JIRA_USER }}
