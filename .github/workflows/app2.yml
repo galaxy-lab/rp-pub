@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - run: node main
+      - run: npm run build && npm run start
         env:
           AZURE_DEVOPS_USER: ${{ secrets. AZURE_DEVOPS_USER }}
           AZURE_PERSONAL_PAT: ${{ secrets. AZURE_PERSONAL_PAT }}
