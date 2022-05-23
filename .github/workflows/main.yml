@@ -35,8 +35,8 @@ jobs:
           node-version: 14
       - run: node main
         env:
-          AZURE_DEVOPS_USERNAME: ${{ secrets. AZURE_DEVOPS_USERNAME }}
-          AZURE_PERSONAL_ACCESS_TOKEN: ${{ secrets. AZURE_PERSONAL_ACCESS_TOKEN }}
+          AZURE_DEVOPS_USERNAME: ${{ secrets. AZURE_DEVOPS_USER }}
+          AZURE_PERSONAL_ACCESS_TOKEN: ${{ secrets. AZURE_PERSONAL_PAT }}
           JIRA_TOKEN: ${{ secrets. JIRA_TOKEN }}
           JIRA_USER: ${{ secrets. JIRA_USER }}
 
