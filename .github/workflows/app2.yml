@@ -26,9 +26,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - run: npm run build && npm run start
+      - run: node main.js
         env:
-          AZURE_DEVOPS_USER: ${{ secrets. AZURE_DEVOPS_USER }}
-          AZURE_PERSONAL_PAT: ${{ secrets. AZURE_PERSONAL_PAT }}
-          JIRA_TOKEN: ${{ secrets. JIRA_TOKEN }}
-          JIRA_USER: ${{ secrets. JIRA_USER }}
+          AZURE_DEVOPS_USER: ${{ secrets.AZURE_DEVOPS_USER }}
+          AZURE_PERSONAL_PAT: ${{ secrets.AZURE_PERSONAL_PAT }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          JIRA_USER: ${{ secrets.JIRA_USER }}
