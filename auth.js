@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export const jiraApi = axios.create({
-    baseURL: `https://stone-banking.atlassian.net/rest`,
+    baseURL: `https://teamuniti.atlassian.net/rest`,
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ export const jiraApi = axios.create({
 
 
 export const azureDevopsApi = axios.create({
-    baseURL: `https://dev.azure.com/stone-banking`,
+    baseURL: `https://dev.azure.com/pcdemolab`,
     auth: {
         username: process.env.AZURE_DEVOPS_USER,
         password: process.env.AZURE_DEVOPS_PAT

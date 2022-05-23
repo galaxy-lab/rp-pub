@@ -65,7 +65,7 @@ async function getFieldOptions() {
     let fieldOptions = []
     try {
         do {
-            const response = await jiraApi.get(`/api/3/field/customfield_10253/context/10364/option?startAt=${startAt}`)
+            const response = await jiraApi.get(`/api/3/field/customfield_10066/context/10167/option?startAt=${startAt}`)
             fieldOptions.push(response.data.values)
             isLast = response.data.isLast
             startAt += 100
@@ -80,9 +80,9 @@ async function getFieldOptions() {
 
 
 const fieldOptions = await getFieldOptions()
-console.log(fieldOptions)
-// const collectionOptions = onlyOneList(fieldOptions)
-// const devopsProjects = await getAzureDevopsProjects()
+// console.log(fieldOptions)
+const collectionOptions = onlyOneList(fieldOptions)
+const devopsProjects = await getAzureDevopsProjects()
 
 
 function mapOptions(fieldOptions, devopsProjects) {
@@ -100,13 +100,13 @@ function mapOptions(fieldOptions, devopsProjects) {
     return (options)
 }
 
-// const optionsToDisable = mapOptions(collectionOptions, devopsProjects)
-// console.log(optionsToDisable)
+const optionsToDisable = mapOptions(collectionOptions, devopsProjects)
+console.log(optionsToDisable)
 
 async function disableFieldOptions(mapOptions) {
     console.log('Building a map of options to disable...')
     try {
-        const response = await jiraApi.put(`/api/3/field/customfield_10253/context/10364/option`, { options: mapOptions })
+        const response = await jiraApi.put(`/api/3/field/customfield_10066/context/10167/option`, { options: mapOptions })
         console.log('Field(s) disabled(s): ')
         console.log(response.data)
     } catch (err) {
@@ -116,7 +116,7 @@ async function disableFieldOptions(mapOptions) {
 }
 
 
-// disableFieldOptions(optionsToDisable)
+disableFieldOptions(optionsToDisable)
 
 
 
