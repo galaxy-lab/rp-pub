@@ -82,8 +82,8 @@ async function getFieldOptions() {
 const fieldOptions = await getFieldOptions()
 // console.log(fieldOptions)
 const collectionOptions = onlyOneList(fieldOptions)
-const devopsProjects = await getAzureDevopsProjects()
-
+console.log(collectionOptions) 
+// const devopsProjects = await getAzureDevopsProjects()
 
 function mapOptions(fieldOptions, devopsProjects) {
     let options = [
@@ -100,8 +100,8 @@ function mapOptions(fieldOptions, devopsProjects) {
     return (options)
 }
 
-const optionsToDisable = mapOptions(collectionOptions, devopsProjects)
-console.log(optionsToDisable)
+// const optionsToDisable = mapOptions(collectionOptions, devopsProjects)
+// console.log(optionsToDisable)
 
 async function disableFieldOptions(mapOptions) {
     console.log('Building a map of options to disable...')
@@ -116,7 +116,7 @@ async function disableFieldOptions(mapOptions) {
 }
 
 
-disableFieldOptions(optionsToDisable)
+// disableFieldOptions(optionsToDisable)
 
 
 
