@@ -45,7 +45,7 @@ async function addFieldOptions() {
     }
 }
 
-// await addFieldOptions()
+await addFieldOptions()
 
 
 function onlyOneList(collectionOfArray) {
