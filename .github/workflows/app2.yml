@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Sync Azure Devops projects on Jira field
 
 # Controls when the workflow will run
 on:
@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 14
+          
+      - name: Syncing projects on field
       - run: node main.js
         env:
           AZURE_DEVOPS_USER: ${{ secrets.AZURE_DEVOPS_USER }}
