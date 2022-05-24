@@ -23,7 +23,7 @@ async function getAzureDevopsProjects() {
     }
 }
 
-console.log(await getAzureDevopsProjects())
+// console.log(await getAzureDevopsProjects())
 
 async function addFieldOptions() {
     console.log('Adding options on custom field...')
@@ -79,10 +79,10 @@ async function getFieldOptions() {
 }
 
 
-// const fieldOptions = await getFieldOptions()
-// // console.log(fieldOptions)
-// const collectionOptions = onlyOneList(fieldOptions)
-// const devopsProjects = await getAzureDevopsProjects()
+const fieldOptions = await getFieldOptions()
+// console.log(fieldOptions)
+const collectionOptions = onlyOneList(fieldOptions)
+const devopsProjects = await getAzureDevopsProjects()
 
 
 function mapOptions(fieldOptions, devopsProjects) {
@@ -116,7 +116,7 @@ async function disableFieldOptions(mapOptions) {
 }
 
 
-// disableFieldOptions(optionsToDisable)
+disableFieldOptions(optionsToDisable)
 
 
 
